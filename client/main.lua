@@ -10,7 +10,9 @@ local UNARMED = joaat('WEAPON_UNARMED')
 local IDLE_MS = 500                      -- how often to check when not in a restricted vehicle
 local SELECT_WEAPON = 37                 -- INPUT_SELECT_WEAPON: the weapon wheel
 
-local strings = Locales[Config.Locale] or Locales.en
+-- 'auto' follows ox_lib's language (the ox:locale convar), and English when that isn't set.
+local locale = Config.Locale == 'auto' and GetConvar('ox:locale', 'en') or Config.Locale
+local strings = Locales[locale] or Locales.en
 local vehicles, classes = {}, {}
 local lastMessage = -math.huge
 local driveByBlocked = false
