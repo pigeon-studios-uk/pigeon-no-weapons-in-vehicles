@@ -5,7 +5,7 @@ lua54 'yes'
 name 'pigeon-no-weapons-in-vehicles'
 author 'Pigeon Studios'
 description 'Keeps weapons holstered in the vehicles you choose, such as police helicopters or buses.'
-version '1.0.0'
+version '1.1.0'
 repository 'https://github.com/pigeon-studios-uk/pigeon-no-weapons-in-vehicles'
 
 -- Pigeon Studios version registry entry, read by server/version_check.lua.
